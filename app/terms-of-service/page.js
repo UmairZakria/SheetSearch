@@ -1,6 +1,7 @@
 // app/terms-of-service/page.js
 import Link from 'next/link';
 import Footer from '@/components/Footer.js';
+import { FileSpreadsheet, ArrowLeft } from 'lucide-react';
 
 export const metadata = {
   title: 'Terms of Service - SheetSearch',
@@ -24,26 +25,7 @@ export default function TermsOfServicePage() {
             className="group flex items-center gap-3 text-slate-900 transition-colors hover:text-brand-600"
           >
             <div className="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 text-white shadow-sm transition-transform group-hover:scale-105">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M4 4h16v16H4z"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                  opacity="0.4"
-                />
-                <path d="M4 8h16" stroke="currentColor" strokeWidth="1.6" />
-                <path d="M4 12h16" stroke="currentColor" strokeWidth="1.6" />
-                <path d="M4 16h16" stroke="currentColor" strokeWidth="1.6" />
-                <rect x="6" y="6" width="3" height="2" fill="currentColor" />
-                <rect x="6" y="10" width="3" height="2" fill="currentColor" />
-                <rect x="6" y="14" width="3" height="2" fill="currentColor" />
-              </svg>
+              <FileSpreadsheet className="h-4 w-4" strokeWidth={2.2} />
             </div>
             <span className="text-base font-bold">SheetSearch</span>
           </Link>
@@ -52,7 +34,7 @@ export default function TermsOfServicePage() {
             href="/"
             className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 transition-colors hover:text-brand-600"
           >
-            <span>←</span> Back to App
+            <ArrowLeft className="h-3.5 w-3.5" /> Back to App
           </Link>
         </div>
       </header>

@@ -4,6 +4,7 @@
 // Renders search results grouped by spreadsheet, with row preview + "Open in Sheets" link.
 
 import { useState } from 'react';
+import { ExternalLink } from 'lucide-react';
 
 export default function ResultsList({ results, keyword, caseSensitive }) {
   if (!results || results.length === 0) return null;
@@ -50,9 +51,10 @@ function SpreadsheetCard({ spreadsheet, keyword, caseSensitive }) {
           href={spreadsheet.spreadsheetUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium text-brand-700 ring-1 ring-inset ring-brand-100 hover:bg-brand-50"
+          className="inline-flex items-center gap-1.5 shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium text-brand-700 ring-1 ring-inset ring-brand-100 hover:bg-brand-50"
         >
-          Open sheet ↗
+          <span>Open sheet</span>
+          <ExternalLink className="h-3 w-3" />
         </a>
       </header>
 
@@ -67,9 +69,10 @@ function SpreadsheetCard({ spreadsheet, keyword, caseSensitive }) {
                 href={m.openUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md bg-brand-600 px-2.5 py-1 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-700"
+                className="inline-flex items-center gap-1.5 rounded-md bg-brand-600 px-2.5 py-1 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-700"
               >
-                Open in Sheets ↗
+                <span>Open in Sheets</span>
+                <ExternalLink className="h-3 w-3" />
               </a>
             </div>
             <div className="overflow-x-auto rounded-lg ring-1 ring-slate-100">
