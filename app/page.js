@@ -9,6 +9,7 @@ import ConnectButton from '@/components/ConnectButton.js';
 import SignOutButton from '@/components/SignOutButton.js';
 import SheetPicker from '@/components/SheetPicker.js';
 import ResultsList from '@/components/ResultsList.js';
+import Footer from '@/components/Footer.js';
 
 const DEBOUNCE_MS = 350;
 
@@ -315,9 +316,10 @@ export default function Home() {
 
 function Shell({ children }) {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      <div className="px-4 py-8 sm:px-6 lg:px-8">{children}</div>
-    </main>
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-slate-50 to-white">
+      <main className="flex-1 px-4 py-8 sm:px-6 lg:px-8">{children}</main>
+      <Footer />
+    </div>
   );
 }
 
