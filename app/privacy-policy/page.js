@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Footer from '@/components/Footer.js';
 
 export const metadata = {
-  title: 'Privacy Policy - Sheet Search',
+  title: 'Privacy Policy - SheetSearch',
   description:
-    'Privacy Policy for Sheet Search (sheetsearch.umairlab.com). Learn how we handle your data, Google OAuth scopes, and our strict zero-storage policy.',
+    'Privacy Policy for SheetSearch (sheetsearch.umairlab.com). Learn how we handle your data, Google OAuth scopes, and our strict zero-storage policy.',
   alternates: {
     canonical: 'https://sheetsearch.umairlab.com/privacy-policy',
   },
@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
                 <rect x="6" y="14" width="3" height="2" fill="currentColor" />
               </svg>
             </div>
-            <span className="text-base font-bold">Sheet Search</span>
+            <span className="text-base font-bold">SheetSearch</span>
           </Link>
 
           <Link
@@ -97,7 +97,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-lg font-bold text-slate-900">1. Introduction</h2>
               <p className="mt-2">
-                Welcome to <strong>Sheet Search</strong> (accessible at{' '}
+                Welcome to <strong>SheetSearch</strong> (accessible at{' '}
                 <a
                   href="https://sheetsearch.umairlab.com"
                   className="font-medium text-brand-600 underline hover:text-brand-700"
@@ -107,7 +107,7 @@ export default function PrivacyPolicyPage() {
                 ). We value your trust and are committed to protecting your personal information and spreadsheet data.
               </p>
               <p className="mt-2">
-                This Privacy Policy explains how Sheet Search accesses, uses, processes, and protects your information when you connect your Google Account and use our real-time search application.
+                This Privacy Policy explains how SheetSearch accesses, uses, processes, and protects your information when you connect your Google Account and use our real-time search application.
               </p>
             </section>
 
@@ -116,7 +116,7 @@ export default function PrivacyPolicyPage() {
                 2. Information We Access and Process
               </h2>
               <p className="mt-2">
-                When you use Sheet Search, we interact with Google APIs solely to provide the search functionality. We access the following categories of data:
+                When you use SheetSearch, we interact with Google APIs solely to provide the search functionality. We access the following categories of data:
               </p>
               <ul className="mt-2 list-disc space-y-2 pl-5">
                 <li>
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
                 3. How We Use Your Information
               </h2>
               <p className="mt-2">
-                We use the data accessed from Google APIs strictly to operate and deliver the Sheet Search service:
+                We use the data accessed from Google APIs strictly to operate and deliver the SheetSearch service:
               </p>
               <ul className="mt-2 list-disc space-y-1 pl-5">
                 <li>To authenticate your session securely using OAuth 2.0.</li>
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
                   Google API Services User Data Policy Disclosure
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-700">
-                  Sheet Search&apos;s use and transfer to any other app of information received from Google APIs will adhere to the{' '}
+                  SheetSearch&apos;s use and transfer to any other app of information received from Google APIs will adhere to the{' '}
                   <a
                     href="https://developers.google.com/terms/api-services-user-data-policy"
                     target="_blank"
@@ -188,7 +188,7 @@ export default function PrivacyPolicyPage() {
                 5. Data Storage, Retention, and Security
               </h2>
               <p className="mt-2">
-                <strong>No Database Storage:</strong> Sheet Search operates without a persistent database. We do not store your spreadsheet data, search queries, or search results on our servers or hard drives.
+                <strong>No Database Storage:</strong> SheetSearch operates without a persistent database. We do not store your spreadsheet data, search queries, or search results on our servers or hard drives.
               </p>
               <p className="mt-2">
                 <strong>In-Memory Processing:</strong> When you execute a search, spreadsheet rows are retrieved ephemerally into server memory, filtered against your query keyword, and streamed back to your client. Memory is released immediately after request completion.
@@ -222,7 +222,7 @@ export default function PrivacyPolicyPage() {
                   <strong>Sign Out:</strong> Clicking the &quot;Sign Out&quot; button immediately destroys your encrypted session cookie and disconnects your active session.
                 </li>
                 <li>
-                  <strong>Revoke Google Account Permissions:</strong> You can revoke Sheet Search&apos;s access to your Google Account at any time via your{' '}
+                  <strong>Revoke Google Account Permissions:</strong> You can revoke SheetSearch&apos;s access to your Google Account at any time via your{' '}
                   <a
                     href="https://myaccount.google.com/permissions"
                     target="_blank"
@@ -231,7 +231,7 @@ export default function PrivacyPolicyPage() {
                   >
                     Google Account Third-party apps &amp; services settings
                   </a>
-                  . Once revoked, Sheet Search can no longer access your Drive or Sheets files.
+                  . Once revoked, SheetSearch can no longer access your Drive or Sheets files.
                 </li>
               </ul>
             </section>
@@ -241,7 +241,7 @@ export default function PrivacyPolicyPage() {
                 8. Cookies and Technical Tracking
               </h2>
               <p className="mt-2">
-                Sheet Search uses strictly necessary, encrypted HTTP cookies for session management and CSRF protection. We do not use tracking cookies, analytics trackers, or third-party marketing cookies.
+                SheetSearch uses strictly necessary, encrypted HTTP cookies for session management and CSRF protection. We do not use tracking cookies, analytics trackers, or third-party marketing cookies.
               </p>
             </section>
 
@@ -262,7 +262,7 @@ export default function PrivacyPolicyPage() {
                 If you have questions, concerns, or requests regarding this Privacy Policy or our security practices, please contact us at:
               </p>
               <div className="mt-3 rounded-xl bg-slate-50 p-4 text-xs leading-relaxed text-slate-700 ring-1 ring-slate-200">
-                <p><strong>Sheet Search</strong></p>
+                <p><strong>SheetSearch</strong></p>
                 <p>Website:{' '}
                   <a
                     href="https://sheetsearch.umairlab.com"

@@ -2,8 +2,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Sheet Search',
-  description: 'Search across all of your Google Sheets in real time.',
+  title: 'SheetSearch - Search Across All Your Google Sheets',
+  description: 'SheetSearch lets you search across all of your Google Sheets in real time with read-only access and zero data storage.',
 };
 
 export default function RootLayout({ children }) {

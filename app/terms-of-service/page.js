@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Footer from '@/components/Footer.js';
 
 export const metadata = {
-  title: 'Terms of Service - Sheet Search',
+  title: 'Terms of Service - SheetSearch',
   description:
-    'Terms of Service for Sheet Search (sheetsearch.umairlab.com). Read our terms and conditions for using our real-time Google Sheets search tool.',
+    'Terms of Service for SheetSearch (sheetsearch.umairlab.com). Read our terms and conditions for using our real-time Google Sheets search tool.',
   alternates: {
     canonical: 'https://sheetsearch.umairlab.com/terms-of-service',
   },
@@ -45,7 +45,7 @@ export default function TermsOfServicePage() {
                 <rect x="6" y="14" width="3" height="2" fill="currentColor" />
               </svg>
             </div>
-            <span className="text-base font-bold">Sheet Search</span>
+            <span className="text-base font-bold">SheetSearch</span>
           </Link>
 
           <Link
@@ -78,7 +78,7 @@ export default function TermsOfServicePage() {
                 1. Acceptance of Terms
               </h2>
               <p className="mt-2">
-                By accessing or using <strong>Sheet Search</strong> (available at{' '}
+                By accessing or using <strong>SheetSearch</strong> (available at{' '}
                 <a
                   href="https://sheetsearch.umairlab.com"
                   className="font-medium text-brand-600 underline hover:text-brand-700"
@@ -101,7 +101,7 @@ export default function TermsOfServicePage() {
                 2. Description of Service
               </h2>
               <p className="mt-2">
-                Sheet Search provides a web-based productivity utility that enables users to connect their Google Account and perform keyword searches across their Google Sheets spreadsheets in real time. The service utilizes Google Drive and Google Sheets APIs with read-only permissions to query metadata and cell values on demand without permanently persisting user spreadsheet content.
+                SheetSearch provides a web-based productivity utility that enables users to connect their Google Account and perform keyword searches across their Google Sheets spreadsheets in real time. The service utilizes Google Drive and Google Sheets APIs with read-only permissions to query metadata and cell values on demand without permanently persisting user spreadsheet content.
               </p>
             </section>
 
@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
                 3. Google Account and Authorization
               </h2>
               <p className="mt-2">
-                To use Sheet Search, you must sign in and authorize access via Google OAuth. You represent and warrant that:
+                To use SheetSearch, you must sign in and authorize access via Google OAuth. You represent and warrant that:
               </p>
               <ul className="mt-2 list-disc space-y-1.5 pl-5">
                 <li>You have the legal authority to grant access to the Google Account and spreadsheets you search.</li>
@@ -124,7 +124,7 @@ export default function TermsOfServicePage() {
                 4. Acceptable Use Policy
               </h2>
               <p className="mt-2">
-                You agree not to misuse Sheet Search. Prohibited activities include, but are not limited to:
+                You agree not to misuse SheetSearch. Prohibited activities include, but are not limited to:
               </p>
               <ul className="mt-2 list-disc space-y-1.5 pl-5">
                 <li>Attempting to probe, scan, or test the vulnerability of the service or breach any security measures.</li>
@@ -139,13 +139,13 @@ export default function TermsOfServicePage() {
                 5. Intellectual Property and Content Ownership
               </h2>
               <p className="mt-2">
-                <strong>Your Content:</strong> You retain full ownership, title, and intellectual property rights in all data, spreadsheets, and documents you access or search through Sheet Search. Sheet Search claims no ownership or license over your spreadsheet contents.
+                <strong>Your Content:</strong> You retain full ownership, title, and intellectual property rights in all data, spreadsheets, and documents you access or search through SheetSearch. SheetSearch claims no ownership or license over your spreadsheet contents.
               </p>
               <p className="mt-2">
-                <strong>Our Service:</strong> The Sheet Search software, user interface design, logos, trademarks, and documentation are the exclusive property of Sheet Search and its licensors.
+                <strong>Our Service:</strong> The SheetSearch software, user interface design, logos, trademarks, and documentation are the exclusive property of SheetSearch and its licensors.
               </p>
               <p className="mt-2">
-                <strong>Third-Party Trademarks:</strong> Google Sheets, Google Drive, Google, and the Google logo are registered trademarks of Google LLC. Sheet Search is an independent application and is not affiliated with, endorsed by, or sponsored by Google LLC.
+                <strong>Third-Party Trademarks:</strong> Google Sheets, Google Drive, Google, and the Google logo are registered trademarks of Google LLC. SheetSearch is an independent application and is not affiliated with, endorsed by, or sponsored by Google LLC.
               </p>
             </section>
 
@@ -175,7 +175,7 @@ export default function TermsOfServicePage() {
                 8. Termination and Access Revocation
               </h2>
               <p className="mt-2">
-                We reserve the right to suspend or terminate access to the service for any user who violates these Terms or engages in abusive behavior. You may terminate your relationship with Sheet Search at any time by signing out and revoking application access via your Google Account security settings.
+                We reserve the right to suspend or terminate access to the service for any user who violates these Terms or engages in abusive behavior. You may terminate your relationship with SheetSearch at any time by signing out and revoking application access via your Google Account security settings.
               </p>
             </section>
 
@@ -196,7 +196,7 @@ export default function TermsOfServicePage() {
                 For questions concerning these Terms of Service, please contact:
               </p>
               <div className="mt-3 rounded-xl bg-slate-50 p-4 text-xs leading-relaxed text-slate-700 ring-1 ring-slate-200">
-                <p><strong>Sheet Search</strong></p>
+                <p><strong>SheetSearch</strong></p>
                 <p>Website:{' '}
                   <a
                     href="https://sheetsearch.umairlab.com"
