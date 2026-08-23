@@ -7,7 +7,7 @@ export default function ConnectButton() {
   return (
     <a
       href="/api/auth/login"
-      className="inline-flex items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-slate-800 shadow-sm ring-1 ring-slate-200 transition hover:bg-slate-50 hover:shadow-md"
+      className="inline-flex items-center gap-[0.5vw] rounded-full font-poppins bg-white px-[1.3vw] py-[1vw] text-base font-medium  text-black shadow-xl transition hover:bg-slate-50 hover:shadow-md"
     >
       <GoogleLogo />
       Connect with Google

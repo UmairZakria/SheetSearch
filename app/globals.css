@@ -1,35 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --bg: #f8fafc;
   --fg: #0f172a;
-  --muted: #475569;
   --card: #ffffff;
   --border: #e2e8f0;
   --accent: #2563eb;
+  --text-xs-fluid: 12px;
+  --text-sm-fluid: 14px;
+  --text-base-fluid: 16px;
+  --text-lg-fluid: 18px;
+  --text-xl-fluid: 20px;
+  --text-2xl-fluid: 24px;
+  --text-3xl-fluid: 30px;
+  --text-4xl-fluid: 36px;
+  --text-5xl-fluid: 48px;
+  --text-6xl-fluid: 60px;
+  --text-7xl-fluid: 72px;
+  --text-8xl-fluid: 96px;
+  --text-9xl-fluid: 128px;
+}
+
+@media (min-width: 1025px) {
+  :root {
+    --text-xs-fluid: 0.65vw;
+    --text-sm-fluid: 0.75vw;
+    --text-base-fluid: 0.85vw;
+    --text-lg-fluid: 1vw;
+    --text-xl-fluid: 1.25vw;
+    --text-2xl-fluid: 1.5vw;
+    --text-3xl-fluid: 2vw;
+    --text-4xl-fluid: 2.5vw;
+    --text-5xl-fluid: 3vw;
+    --text-6xl-fluid: 4vw;
+    --text-7xl-fluid: 5vw;
+    --text-8xl-fluid: 6vw;
+    --text-9xl-fluid: 7vw;
+  }
+}
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-comfortaa: "Comfortaa", sans-serif;
+  /* --font-sans: "Poppins", sans-serif; */
+  /* --font-display: "Poppins", sans-serif; */
+  /* --font-body: "Poppins", sans-serif; */
+
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #dde8ff;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+
+  --color-primary: #2eafff;
+  --color-secondary: #58b4ff;
+  --color-tertiary: #8a499f;
+  --color-container: #323138;
+
+  --radius-DEFAULT: 0.75rem;
+
+  --text-xs: var(--text-xs-fluid);
+  --text-sm: var(--text-sm-fluid);
+  --text-base: var(--text-base-fluid);
+  --text-lg: var(--text-lg-fluid);
+  --text-xl: var(--text-xl-fluid);
+  --text-2xl: var(--text-2xl-fluid);
+  --text-3xl: var(--text-3xl-fluid);
+  --text-4xl: var(--text-4xl-fluid);
+  --text-5xl: var(--text-5xl-fluid);
+  --text-6xl: var(--text-6xl-fluid);
+  --text-7xl: var(--text-7xl-fluid);
+  --text-8xl: var(--text-8xl-fluid);
+  --text-9xl: var(--text-9xl-fluid);
 }
 
 html,
 body {
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--fg);
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  /* font-family: var(--font-poppins); */
+  
+  scrollbar-width: none;
+
 }
 
-/* Subtle focus rings for accessibility */
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
-
-/* Highlighted match inside a snippet */
 mark.match {
-  background: #fde68a;
-  color: #78350f;
+  background-color: #fef08a;
+  color: #713f12;
   padding: 0 2px;
-  border-radius: 3px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.border {
+  border: 2px solid red;
 }
