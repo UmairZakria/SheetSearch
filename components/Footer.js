@@ -53,7 +53,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 bg-white font-poppins">
+    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 relative z-50 bg-white/5 backdrop-blur-xs font-poppins">
       <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
         <div>
           <Link href="/" className="flex items-center gap-2">

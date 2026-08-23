@@ -2,7 +2,7 @@
 // Server Component (SSR) for full SEO, crawler rendering, and immediate HTML delivery.
 
 import { getSession } from "@/lib/session.js";
-import SearchDashboard from "@/components/SearchDashboard.js";
+import SearchDashboard from "@/components/SearchDashboard.jsx";
 import Footer from "@/components/Footer.js";
 import Link from "next/link";
 import {
@@ -43,7 +43,7 @@ export default async function HomePage({ searchParams }) {
 
   return (
     <div className=" w-full  p-[1.2vw] bg-white   text-slate-100 selection:bg-brand-500 selection:text-white">
-      <CustomScrollbar />
+      {/* <CustomScrollbar /> */}
       {/* Top Hero Section with Cloud Sky Background */}
       
       <Hero authError={authError}/>

@@ -13,10 +13,10 @@ export default function ResultsList({ results, keyword, caseSensitive }) {
   const needle = caseSensitive ? keyword : keyword.toLowerCase();
 
   return (
-    <section className="space-y-4">
+    <section className="space-y-4 font-poppins">
       <div className="flex items-center justify-between">
-        <h2 className="flex items-center gap-2.5 text-lg font-bold text-slate-900">
-          <span className="inline-flex items-center rounded-full bg-emerald-600 px-3 py-0.5 text-xs font-bold text-white shadow-sm">
+        <h2 className="flex items-center gap-2.5 text-lg  text-slate-900">
+          <span className="inline-flex items-center rounded-xl bg-emerald-600 px-3 py-[0.7vw] text-sm text-white ">
             {total} {total === 1 ? 'match' : 'matches'}
           </span>
           <span>Found in your Google Sheets</span>
@@ -41,7 +41,7 @@ function SpreadsheetCard({ spreadsheet, keyword, caseSensitive }) {
     : spreadsheet.matches.slice(0, 5);
 
   return (
-    <article className="overflow-hidden rounded-xl border border-emerald-200 bg-white shadow-sm ring-1 ring-emerald-100">
+    <article className="overflow-hidden rounded-xl font-poppins  border-emerald-200 bg-white shadow-sm ring-1 ring-emerald-100">
       <header className="flex items-center justify-between gap-3 border-b border-emerald-100 bg-emerald-50/70 px-4 py-3">
         <div className="min-w-0">
           <h3 className="truncate text-base font-bold text-slate-900">
@@ -73,15 +73,15 @@ function SpreadsheetCard({ spreadsheet, keyword, caseSensitive }) {
                 href={m.openUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-md bg-emerald-600 px-3 py-1 text-xs font-bold text-white shadow-sm transition hover:bg-emerald-700"
+                className="inline-flex items-center  gap-1.5 rounded-md bg-emerald-600 px-3 py-[0.6vw] text-xs font-medium text-white shadow-sm transition hover:bg-emerald-700"
               >
                 <span>Open in Sheets</span>
                 <ExternalLink className="h-3 w-3" />
               </a>
             </div>
-            <div className="overflow-x-auto rounded-lg border border-emerald-100 bg-white">
+            <div className="overflow-x-auto rounded-lg  border-emerald-100 bg-white">
               <table className="min-w-full divide-y divide-slate-100 text-sm">
-                <tbody className="divide-y divide-slate-100">
+                <tbody className="divide-y flex items-center justify-between w-full divide-slate-100">
                   <tr>
                     {m.rowData.map((cell, j) => (
                       <td
@@ -108,7 +108,7 @@ function SpreadsheetCard({ spreadsheet, keyword, caseSensitive }) {
           <button
             type="button"
             onClick={() => setExpanded((v) => !v)}
-            className="text-sm font-semibold text-brand-700 hover:text-brand-800"
+            className="text-sm font-semibold hover:cursor-pointer text-brand-700 hover:text-brand-800"
           >
             {expanded
               ? 'Show fewer matches'
@@ -136,7 +136,7 @@ function highlight(cell, needle, caseSensitive) {
     }
     if (idx > i) parts.push(text.slice(i, idx));
     parts.push(
-      <mark key={`${idx}-${parts.length}`} className="rounded bg-emerald-200 px-1 py-0.5 font-extrabold text-emerald-950 ring-1 ring-emerald-400">
+      <mark key={`${idx}-${parts.length}`} className="rounded bg-emerald-200 px-1 py-0.5 font-medium text-emerald-950 ring-1 ring-emerald-400">
         {text.slice(idx, idx + needle.length)}
       </mark>
     );

@@ -1,7 +1,7 @@
 'use client';
 
 // components/SheetPicker.js
-// Multi-select list of spreadsheets, with search-to-filter and "select all".
+// Multi-select list of spreadsheets with search filter, select all, and responsive flex height.
 
 import { useMemo, useState } from 'react';
 
@@ -36,15 +36,17 @@ export default function SheetPicker({ sheets, selectedIds, onChange, disabled })
 
   if (sheets.length === 0) {
     return (
-      <p className="rounded-lg bg-slate-50 p-4 text-sm text-slate-500 ring-1 ring-slate-200">
-        No spreadsheets found in your Google Drive.
-      </p>
+      <div className="rounded-xl h-full font-poppins bg-white p-6 shadow-xl flex items-center justify-center text-center">
+        <p className="text-sm text-slate-500">
+          No spreadsheets found in your Google Drive.
+        </p>
+      </div>
     );
   }
 
   return (
-    <div className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-      <div className="mb-3 flex items-center justify-between gap-3">
+    <div className="rounded-2xl h-full font-poppins bg-white p-4 sm:p-5 shadow-xl flex flex-col min-h-0">
+      <div className="mb-3 flex items-center justify-between gap-3 shrink-0">
         <input
           type="search"
           value={filter}
@@ -57,13 +59,13 @@ export default function SheetPicker({ sheets, selectedIds, onChange, disabled })
           type="button"
           onClick={toggleAllFiltered}
           disabled={disabled}
-          className="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-brand-700 ring-1 ring-inset ring-brand-100 transition hover:bg-brand-50 disabled:opacity-60"
+          className="shrink-0 rounded-lg px-3 py-2 text-xs sm:text-sm font-medium text-brand-700 ring-1 ring-inset ring-brand-100 transition hover:bg-brand-50 disabled:opacity-60 cursor-pointer"
         >
-          {allFilteredSelected ? 'Clear visible' : 'Select visible'}
+          {allFilteredSelected ? 'Unselect All' : 'Select All'}
         </button>
       </div>
 
-      <div className="max-h-72 overflow-y-auto rounded-lg ring-1 ring-slate-100">
+      <div className="flex-1 min-h-0 overflow-y-auto rounded-lg  pr-1 scrollbar-thin scrollbar-thumb-slate-200">
         <ul className="divide-y divide-slate-100">
           {filtered.map((s) => {
             const checked = selectedIds.has(s.id);
@@ -79,10 +81,10 @@ export default function SheetPicker({ sheets, selectedIds, onChange, disabled })
                     checked={checked}
                     onChange={() => toggle(s.id)}
                     disabled={disabled}
-                    className="h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+                    className="h-4 w-4 sm:size-[1.1vw] min-w-4 min-h-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
                   />
                   <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium text-slate-800">
+                    <p title={s.name} className="truncate text-sm font-medium text-slate-800">
                       {s.name}
                     </p>
                     <p className="truncate text-xs text-slate-500">
@@ -97,14 +99,14 @@ export default function SheetPicker({ sheets, selectedIds, onChange, disabled })
             );
           })}
           {filtered.length === 0 && (
-            <li className="px-3 py-4 text-center text-sm text-slate-400">
-              No matches.
+            <li className="px-3 py-6 text-center text-sm text-slate-400">
+              No matches found.
             </li>
           )}
         </ul>
       </div>
 
-      <p className="mt-3 text-xs text-slate-500">
+      <p className="mt-3 text-xs text-slate-500 shrink-0">
         {selectedIds.size} of {sheets.length} selected
       </p>
     </div>

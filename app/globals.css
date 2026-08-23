@@ -42,6 +42,7 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --font-comfortaa: "Comfortaa", sans-serif;
+  --font-raleway: "Raleway", "sans-serif"
   /* --font-sans: "Poppins", sans-serif; */
   /* --font-display: "Poppins", sans-serif; */
   /* --font-body: "Poppins", sans-serif; */
@@ -52,7 +53,7 @@
   --color-brand-600: #2563eb;
   --color-brand-700: #1d4ed8;
 
-  --color-primary: #2eafff;
+  --color-primary: #02E97B;
   --color-secondary: #58b4ff;
   --color-tertiary: #8a499f;
   --color-container: #323138;

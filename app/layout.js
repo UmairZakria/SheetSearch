@@ -1,13 +1,21 @@
 // app/layout.js
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import "./globals.css";
-import { Poppins, Comfortaa } from "next/font/google";
+import { Poppins, Comfortaa, Raleway } from "next/font/google";
+import CustomScrollbar from "@/components/CustomScrollbar";
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["200", "300","400", "500", "600", "700"],
 });
+
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["200", "300","400", "500", "600", "700"],
+});
+
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
@@ -33,9 +41,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={` ${poppins.variable} ${comfortaa.variable}  antialiased `}
+        className={` ${poppins.variable} ${comfortaa.variable} ${raleway.variable}  antialiased `}
       >
-        <SmoothScrollProvider />
+      <CustomScrollbar />
+        {/* <SmoothScrollProvider /> */}
         {children}
       </body>
     </html>
