@@ -412,7 +412,6 @@ export default function SearchDashboard({ user, onSignedOut }) {
                   <div className="flex items-center gap-2 text-xs font-medium">
                     {searching ? (
                       <span className="flex items-center gap-2 text-black font-semibold">
-                        <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
                         Live Searching...
                       </span>
                     ) : hasSearched ? (

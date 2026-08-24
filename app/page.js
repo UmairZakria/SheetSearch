@@ -117,22 +117,7 @@ export default async function HomePage({ searchParams }) {
           {/* S-Curve Process Flow Container */}
           <div className="relative mt-[2vw] p-[2vw]  ">
             {/* Desktop Continuous Winding Blue S-Curve SVG */}
-            <div className="absolute h-[75vh] inset-0 pointer-events-none hidden md:block">
-              <svg
-                className="h-full w-full"
-                viewBox="0 0 900 370"
-                fill="none"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M 150 56 L 750 56 C 885 56, 885 185, 750 185 L 150 185 C 15 185, 15 314, 150 314 L 750 314"
-                  stroke="#0284c7"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
+            
 
             {/* Top Row: Steps 1, 2, 3 */}
             <div className="grid grid-cols-1   md:grid-cols-3 text-center font-poppins relative z-10">

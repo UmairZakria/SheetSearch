@@ -100,10 +100,10 @@ const Hero = ({ authError }) => {
         return (
             <div className="rounded-md bg-white/1 p-[1.2vw] shadow-xl backdrop-blur-xs transition hover:scale-105">
                 <div className="flex flex-col text-center gap-[0.1vw] items-center justify-center font-poppins">
-                    <p className="text-lg font-medium uppercase text-white/90">
+                    <p className="text-base font-medium uppercase text-white/90">
                         {title}
                     </p>
-                    <p className="text-base text-[#00ffcc] font-">
+                    <p className="text-sm text-[#00ffcc] font-">
                         {description}
                     </p>
                 </div>
@@ -143,7 +143,7 @@ const Hero = ({ authError }) => {
                     </Link>
 
                     {/* Nav links */}
-                    <nav className="hidden items-center font-poppins gap-8 text-base font-medium text-white/90 md:flex">
+                    <nav className="hidden items-center font-poppins gap-2 xl:gap-8 text-base font-medium text-white/90 md:flex">
                         <a href="#purpose" className="transition hover:text-white hover:drop-shadow">
                             Purpose &amp; Features
                         </a>
@@ -165,7 +165,7 @@ const Hero = ({ authError }) => {
                     <div>
                         <a
                             href="/api/auth/login"
-                            className="flex gap-[0.2vw] items-center justify-center font-poppins bg-white/10 px-[1.2vw] py-[0.6vw] text-lg rounded-full font- text-white shadow-xl transition-all duration-200 ease-in-out hover:bg-white/20 hover:shadow-2xl"
+                            className="flex gap-[0.2vw] items-center justify-center font-poppins bg-white/10 px-[1.2vw] py-[0.6vw] text-base rounded-full font- text-white shadow-xl transition-all duration-200 ease-in-out hover:bg-white/20 hover:shadow-2xl"
                         >
                             <span>Sign In</span>
                             <ChevronRight className="size-[1vw]" />
